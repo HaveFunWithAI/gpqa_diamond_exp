@@ -47,6 +47,7 @@ The following metrics are calculated to assess model performance:
 
 | Model (T=0)                    | Acc_avg | Acc_A  | Acc_B  | Acc_C  | Acc_D  | Acc_min | Acc_max | Unk_avg |
 |---------------------------------|---------|--------|--------|--------|--------|---------|---------|---------|
+| **deepseek-v2.5** (from openrouter)                   | 42.55%  | 35.86% | 43.94% | 42.42% | 47.98% | 20.71%  | 65.66%  | 11.99%  |
 | **gemini-1.5-pro** (from openrouter)         | 45.83%  | 42.93% | 40.40% | 53.03% | 46.97% | 23.23%  | 71.72%  | 11.36%  |
 | **gemini-1.5-flash** (from openrouter)       | 40.78%  | 37.88% | 39.39% | 43.43% | 42.42% | 20.20%  | 65.15%  | 11.75%  |
 | **gemini-1.5-flash**            | 41.67%  | 40.40% | 38.89% | 44.44% | 42.93% | 23.23%  | 63.13%  | 11.49%  |
