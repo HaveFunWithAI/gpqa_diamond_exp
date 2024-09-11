@@ -47,14 +47,17 @@ The following metrics are calculated to assess model performance:
 
 | Model (T=0)                    | Acc_avg | Acc_A  | Acc_B  | Acc_C  | Acc_D  | Acc_min | Acc_max | Unk_avg |
 |---------------------------------|---------|--------|--------|--------|--------|---------|---------|---------|
+| **gemini-1.5-pro** (from openrouter)         | 45.83%  | 42.93% | 40.40% | 53.03% | 46.97% | 23.23%  | 71.72%  | 11.36%  |
+| **gemini-1.5-flash** (from openrouter)       | 40.78%  | 37.88% | 39.39% | 43.43% | 42.42% | 20.20%  | 65.15%  | 11.75%  |
 | **gemini-1.5-flash**            | 41.67%  | 40.40% | 38.89% | 44.44% | 42.93% | 23.23%  | 63.13%  | 11.49%  |
 | **llama-3.1-70b** (from groq)   | 46.34%  | 42.93% | 47.98% | 46.46% | 47.98% | 24.24%  | 71.72%  | 7.33%   |
 | **llama-3.1-405b** (from together) | 52.53%  | 50.00% | 52.02% | 55.05% | 53.03% | 29.80%  | 76.77%  | 6.95%   |
 | **gpt-4o**                      | 53.16%  | 54.55% | 48.99% | 52.53% | 56.57% | 33.84%  | 73.23%  | 7.32%   |
 | **claude-3.5-sonnet**           | 56.06%  | 44.95% | 58.59% | 62.12% | 58.59% | 30.30%  | 78.28%  | 6.95%   |
 
+
 ### Key Notes:
 - **Acc_min vs Acc_avg**: The significant gap between Acc_min and Acc_avg highlights that models often struggle with consistency across position perturbations.
 - **Claude-3.5-sonnet Acc_A**: Claude-3.5-sonnet's low accuracy when the correct answer is A (Acc_A), also significantly drags down its Acc_min score.
-- **Acc_max for Llama-3.1-405b**: Llama-3.1-405b shows the highest Acc_max, indicating its ability to answer correctly in at least one of the versions.
-- **Unknown Response Rate (Unk_avg)**: Gemini-1.5-flash had the highest rate of "unknown" answers (~4% more than others), suggesting potential accuracy improvements if guessing for unknowns (~1% more that others).
+- **Acc_C for Gemini-1.5-Pro (from OpenRouter)**: 
+- **Unknown Response Rate (Unk_avg)**: Gemini models had the highest rate of "unknown" answers (~4% more than others), suggesting potential accuracy improvements if guessing for unknowns (~1% more that others).
