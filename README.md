@@ -49,6 +49,7 @@ The following metrics are calculated to assess model performance:
 |---------------------------------|---------|--------|--------|--------|--------|---------|---------|---------|
 | **gemini-1.5-flash**            | 41.67%  | 40.40% | 38.89% | 44.44% | 42.93% | 23.23%  | 63.13%  | 11.49%  |
 | **gemini-1.5-flash-exp-0827**           | 46.97%  | 54.04% | 45.45% | 43.94% | 44.44% | 26.26%  | 73.23%  | 8.59%   |
+| **gemini-1.5-pro-exp-0827**    | 51.89%  | 55.05% | 54.55% | 52.53% | 45.45% | 32.32%  | 75.25%  | 7.83%   |
 | **llama-3.1-70b** (from groq)   | 46.34%  | 42.93% | 47.98% | 46.46% | 47.98% | 24.24%  | 71.72%  | 7.33%   |
 | **llama-3.1-405b** (from together) | 52.53%  | 50.00% | 52.02% | 55.05% | 53.03% | 29.80%  | 76.77%  | 6.95%   |
 | **gpt-4o**                      | 53.16%  | 54.55% | 48.99% | 52.53% | 56.57% | 33.84%  | 73.23%  | 7.32%   |
@@ -63,3 +64,6 @@ The following metrics are calculated to assess model performance:
 - **Gemini-1.5-Flash-Exp-0827 Acc_A**: The eval was repeated twice more for option A:
   - Avg: 54.38% (54.04%, 56.06% & 53.03%)
   - Avg: 44.61% for B, C & D
+- **Gemini-1.5-Pro-Exp-0827 Acc_D**: The eval was repeated twice more for option D:
+  - Avg: 46.30% (45.45%, 45.96% & 47.47%)
+  - Avg: 54.04% for A, C & D
